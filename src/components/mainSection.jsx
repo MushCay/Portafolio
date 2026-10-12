@@ -18,6 +18,7 @@ export function Main() {
                 <section className="main-texts">
                     <div className="main-sobreMi">
                         <h2>Sobre Mí</h2>
+                        <h4>Abril Melissa Garcia Horta</h4>
                         <p>Soy una persona apasionada por la tecnología y el desarrollo web. Me encanta aprender
                             nuevas tecnologías y aplicarlas en proyectos interesantes. Mi objetivo es seguir creciendo como profesional y
                             contribuir a la creación de soluciones innovadoras.</p>

@@ -47,7 +47,7 @@ export function ProyectosSection() {
                         title="Estudio de Sitio"
                         text="Estudio de Sitio realizado en la casa de un Compañero"
                         linkText="Detalles"
-                        linkUrl="https://github.com/tu-usuario/repo"
+                        linkUrl="/proyecto/estudio-Sitio"
                     />
 
                     <Card
@@ -55,7 +55,7 @@ export function ProyectosSection() {
                         title="Interfaz Figma Juego Infantil"
                         text="Interfaz en figma de juego para niños"
                         linkText="Detalles"
-                        linkUrl="/proyecto/stocker-lab"
+                        linkUrl="/proyecto/Figma"
                     />
 
                     <Card

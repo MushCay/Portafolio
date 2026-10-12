@@ -1,5 +1,6 @@
 import { NavBar } from './navBar.jsx';
 import './sectionp.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import bannerImg from '../assets/banner.jpg'
 
 export function ProjectSection({
@@ -24,8 +25,8 @@ export function ProjectSection({
                         </section>
 
                         <section className="project-casoUso">
-                            <h3>Caso de Uso</h3>
-                            <p>{casoUso}</p>
+                            <h3>Detalles</h3>
+                            <div dangerouslySetInnerHTML={{ __html: casoUso }} />
                         </section>
 
                         <section className="project-Imagenes">

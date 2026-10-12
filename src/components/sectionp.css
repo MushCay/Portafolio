@@ -177,7 +177,8 @@
 }
 
 .project-description,
-.project-casoUso p {
+.project-casoUso div {
+    white-space: pre-line;
     color: var(--texto);
     font-size: 1.05rem;
     line-height: 1.7;
@@ -385,7 +386,7 @@
 }
 
 .project-img-carousel {
-    height: 320px;
+    height: 500px;
     object-fit: cover;
 }
 
