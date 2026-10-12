@@ -63,7 +63,7 @@ export function ProyectosSection() {
                         title="Creacion Personajes"
                         text="Generacion de personajes"
                         linkText="Detalles"
-                        linkUrl="https://github.com/tu-usuario/repo"
+                        linkUrl="/proyecto/Personajes"
                     />
 
                 </section>

@@ -18,6 +18,17 @@ import imgGalac3 from './assets/imagenesRepo/galac3.png';
 import imgGalac4 from './assets/imagenesRepo/galact4.png';
 import imgGalac5 from './assets/imagenesRepo/galac5.png';
 
+//SECCION 3
+
+import imgPer1 from './assets/imagenesRepo/per1.png';
+import imgPer2 from './assets/imagenesRepo/per.png';
+import imgPer3 from './assets/imagenesRepo/per2.png';
+import imgPer4 from './assets/imagenesRepo/per3.png';
+import imgPer5 from './assets/imagenesRepo/per4.png';
+import imgPer6 from './assets/imagenesRepo/per5.png';
+
+
+
 // Componente que junta todas tus secciones principales en la página de inicio
 function Home() {
     return (
@@ -83,29 +94,38 @@ export function App() {
                     />
                 } />
 
-                <Route path="/proyecto/Personajes" element={
+                <Route path="proyecto/Personajes" element={
                     <ProjectSection
-                        title="Creador de Pe"
+                        title="Creador de Personajes"
                         description="Este proyecto corresponde a la materia de Desarrollo III. La gestión manual de los atributos de los personajes no jugadores (NPC), como sus armas, habilidades, y clases, puede generar inconsistencias en los datos, duplicidad de información, y errores durante el proceso de desarrollo del juego.   
                                     Un sistema digital centralizado es necesario para estandarizar, organizar y visualizar estos atributos de manera clara y accesible. Con él, se evita la modificación directa de datos en archivos dispersos, se reducen los errores y se agiliza el flujo de trabajo del equipo. Este sistema transforma una tarea compleja y propensa a fallos en un proceso controlado, eficiente, y fácil de mantener. 
                                     "
-                        casoUso={`<b>Requerimientos del cliente:</b>
-                                        •	Juego Educativo
-                                        •	Que permita a los niños aprender
-                                        •	Reforzar conocimiento
-                                        •	Interactivo
-                                        •	Colorido
-                                        •	Interfaz Amigable 
-                                        •	Intuitiva
-                                        <b>Diseño solución:</b>
-                                        A partir de los requerimientos se diseñó. un juego basado en el espacio cuyo objetivo, era que los niños se interesaran por este tema, mediante actividades interactivas y divertidas en donde el infante simulara ser parte de una tripulación espacial que en base a las actividades que realices logres salvar distintos planetas.
-                                        <b>Implementación de Solución y Resultado: <b/>
-                                        La implementación se realizó a partir del diseño de un figma en donde se visualizará esta propuesta.
+                        casoUso={`
+                           <b>Requerimientos del cliente:</b>
+                                <b>Requerimientos Funcionales (Qué debe hacer el sistema) </b>
+                                •	CRUD completo: El sistema debe permitir la Creación, Lectura, Actualización y Eliminación de las entidades: Personajes, Armas, Habilidades y Clases. 
+                                •	Almacenamiento: El sistema debe permitir almacenar todos los datos en una base de datos relacional. 
+                                •	Interfaz de gestión: El sistema debe ofrecer una interfaz visual para gestionar la información sin necesidad de código. 
+                                •	Validación: El sistema debe validar la información ingresada para evitar errores y mantener la consistencia. 
+                                •	Vinculación entre entidades: el sistema debe permitir establecer relaciones entre las entidades, por ejemplo: 
+                                o	Asignar armas a personajes 
+                                o	Asociar habilidades a clases o personajes 
+                                o	Relacionar una clase con sus habilidades correspondientes 
+                                <b>Requerimientos No funcionales (Cómo debe funcionar el sistema) </b>
+                                •	Seguridad: El sistema debe ser seguro, contando con autenticación para asegura que solo usuarios autorizados puedan modificar o eliminar información. 
+                                •	Escalabilidad: El sistema debe ser escalable, permitiendo añadir nuevos tipos de atributos y entidades a futuro sin requerir rehacer todo el sistema. 
+                                •	Usabilidad: La interfaz debe ser intuitiva y consistente para reducir la curva de aprendizaje para los usuarios. 
+                                •	Rendimiento: El sistema debe ofrecer un rendimiento aceptable, sin tiempos de espera excesivos, en la carga y gestión de los datos. 
+                                <b>Diseño solución:</b>
+                                Tras analizar las propuestas, el equipo seleccionó la opción de desarrollar un Sistema CRUD para la gestión de Atributos de personajes no jugadores (NPC), ya que este tipo de sistema aborda un problema crítico en el proceso de desarrollo del juego: la administración manual y dispersa de la información. 
+                                Contar con un sistema centralizado permite estandarizar y organizar los datos, reducir errores manuales, evitar inconsistencias entre versiones e incrementar la eficiencia del equipo de diseño, que podrá modificar y consultar atributos de personajes, armas, habilidades, y clases de manera ágil y controlada.
+                                <b>Implementación de Solución <b/>
+                                La implementación se realizó mediante una interfaz con incorporación a base de datos.
                         `}
-                        technologies={["Figma"]}
-                        images={[imgSitio1, imgSitio2]}
+                        technologies={["Java", "JavaFx", "Mysql"]}
+                        images={[imgPer1, imgPer2, imgPer3, imgPer4, imgPer5, imgPer6]}
                         documents={[
-                            { name: "Figma", description: "Figma del Proyecto.", url: "/ Portafolio / ESTUDIO_SITIO_PROYECTO.pdf", icon: "​🖥️​", btnText: "Ver" }
+                            { name: "Documento del proyecto", description: "Documento con informacion del proyecto.", url: "/Portafolio/Equipo5.pdf", icon: "​📄​", btnText: "Ver" }
                         ]}
                     />
                 } />
