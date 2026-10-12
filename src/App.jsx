@@ -4,7 +4,7 @@ import { Certificaciones } from './components/Certificaciones.jsx';
 import { ProyectosSection } from './components/ProyectosSection.jsx';
 import { Tecnologias } from './components/TecnologiasSection.jsx';
 import { Footer } from './components/footer.jsx';
-import { ProjectSection } from './components/componentProject.jsx'; // <--- Aquí importas tu archivo de blog/proyecto
+import { ProjectSection } from './components/componentProject.jsx';
 
 // Componente que junta todas tus secciones principales en la página de inicio
 function Home() {
@@ -21,11 +21,11 @@ function Home() {
 
 export function App() {
     return (
-        <Router>
+        <Router basename="/Portafolio">
             <Routes>
                 <Route path="/" element={<Home />} />
 
-                {/* RUTA PARA STOCKER LAB (Sin repositorio, con sus datos específicos) */}
+                {/* RUTA PARA STOCKER LAB */}
                 <Route path="/proyecto/stocker-lab" element={
                     <ProjectSection
                         title="Stocker Lab"
@@ -39,7 +39,7 @@ export function App() {
                     />
                 } />
 
-                {/* RUTA PARA OTRO PROYECTO SIN REPOSITORIO (Ejemplo) */}
+                {/* RUTA PARA OTRO PROYECTO */}
                 <Route path="/proyecto/otro-proyecto" element={
                     <ProjectSection
                         title="Nombre de otro proyecto"
