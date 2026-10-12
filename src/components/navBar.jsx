@@ -2,9 +2,9 @@ export function NavBar() {
     return (
         <nav className="navBar">
             <ul>
-                <li><a href="/#home">Sobre mí</a></li>
-                <li><a href="/#about">Tecnologías</a></li>
-                <li><a href="/#projects">Proyectos</a></li>
+                <li><a href="#me">Sobre mí</a></li>
+                <li><a href="#tecnologias">Tecnologías</a></li>
+                <li><a href="#Proyectos">Proyectos</a></li>
             </ul>
         </nav>
     )

@@ -10,7 +10,7 @@ import imgGatito from '../assets/gatito.jpg'
 
 export function Tecnologias() {
     return (
-        <section className="tecnologias-section">
+        <section className="tecnologias-section" id='tecnologias'>
             <div className='SeccionGato'>
                 <img src={imgGatito} alt="Tecnologias" className='Gatito' />
             </div>

@@ -6,18 +6,11 @@ export function Footer() {
                     © {new Date().getFullYear()} • Creado con 💜 y React
                 </p>
 
-                <div className="footer-links">
-                    <a href="#sobre-mi">Sobre mí</a>
-                    <a href="#tecnologias">Tecnologías</a>
-                    <a href="#proyectos">Proyectos</a>
-                    <a href="#certificaciones">Certificaciones</a>
-                </div>
-
                 <div className="footer-socials">
-                    <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/MushCay" target="_blank" rel="noopener noreferrer">
                         GitHub
                     </a>
-                    <a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/abril-melissa-garcia-b1b678413/" target="_blank" rel="noopener noreferrer">
                         LinkedIn
                     </a>
                 </div>

@@ -6,7 +6,7 @@ import { NavBar } from './navBar.jsx'
 import './styleComponents.css';
 export function Main() {
     return (
-        <div className="main-section">
+        <div className="main-section" id='me'>
             <NavBar />
             <img src={bannerImg} alt="Main Image" className="main-image" />
 
@@ -21,10 +21,19 @@ export function Main() {
                         <p>Soy una persona apasionada por la tecnología y el desarrollo web. Me encanta aprender
                             nuevas tecnologías y aplicarlas en proyectos interesantes. Mi objetivo es seguir creciendo como profesional y
                             contribuir a la creación de soluciones innovadoras.</p>
-                        <h3>Contacto</h3>
+                        <h3 className='contacto'>Contacto</h3>
                         <section className='contacts'>
-                            <img src={imgGit} alt="Foto de perfil" className="git-image" />
-                            <img src={linkedin} alt="Foto de perfil" className="link-image" />
+                            <a href="https://github.com/MushCay" target="_blank" rel="noopener noreferrer">
+                                <img src={imgGit} alt="GitHub" className="git-image" />
+                            </a>
+                            <a href="https://www.linkedin.com/in/abril-melissa-garcia-b1b678413/" target="_blank" rel="noopener noreferrer">
+                                <img src={linkedin} alt="LinkedIn" className="link-image" />
+                            </a>
+                            <section className='contacts-1'>
+                                <p>Correo : melissaGarcia@gmail.com<br />
+                                    Telefono : 6622254604
+                                </p>
+                            </section>
                         </section>
                     </div>
                 </section>

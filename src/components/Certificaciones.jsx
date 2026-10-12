@@ -1,21 +1,19 @@
 export function Certificaciones() {
     const certs = [
-        { title: "Certificación en Python", issuer: "Platzi • 2025", link: "#" },
-        { title: "Desarrollo Web Frontend", issuer: "Coursera • 2025", link: "#" },
-        { title: "Bases de Datos SQL", issuer: "Oracle • 2026", link: "#" }
+        { title: "Uso de IA", issuer: "H Ayuntamiento/Microsoft • 2025" },
+        { title: "Tecnico en Programacion", issuer: "CBTIS206 • 2024" }
     ];
 
     return (
         <section className="certificaciones-bar-section">
             <div className="certificaciones-bar-container">
-                <h3 className="cert-bar-title">Certificaciones:</h3>
+                <h3 className="cert-bar-title">Certificaciones y Titulos:</h3>
                 <div className="cert-items-wrapper">
                     {certs.map((cert, index) => (
                         <div key={index} className="cert-bar-item">
                             <span className="cert-text">
                                 <strong>{cert.title}</strong> ({cert.issuer})
                             </span>
-                            <a href={cert.link} className="cert-bar-link">Ver</a>
                         </div>
                     ))}
                 </div>
