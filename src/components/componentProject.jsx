@@ -13,7 +13,11 @@ export function ProjectSection({
 }) {
     return (
         <>
-            <NavBar />
+            <NavBar
+                sobremi="/#me"
+                tecnologias="/#tecnologias"
+                Proyectos="/#Proyectos"
+            />
             <main className="project-page-container">
                 <div className="project-layout-grid">
 
