@@ -2,34 +2,33 @@ html {
     scroll-behavior: smooth;
 }
 
-/*SECCION DE COLORES*/
-
+/* SECCION DE COLORES */
 :root {
     --color-navBar: #6247aa;
     --color-secundario: #ff5733;
 }
 
 body {
-
     margin: 0;
     padding: 0;
     background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
 }
-
-
-
 
 .main-section {
     position: relative;
     width: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-
-/*SECCION DEL NAVBAR*/
+/* SECCION DEL NAVBAR */
 .navBar {
     position: absolute;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 75%;
@@ -42,6 +41,7 @@ body {
     border-radius: 0 0 50px 50px;
     padding: 14px 40px;
     transition: all 0.3s ease;
+    box-sizing: border-box;
 }
 
 .navBar ul {
@@ -61,8 +61,8 @@ body {
     font-size: 0.95rem;
     position: relative;
     transition: color 0.25s ease;
+    white-space: nowrap;
 }
-
 
 .navBar ul li a::after {
     content: '';
@@ -84,12 +84,12 @@ body {
 }
 
 
-/*SECCION DE INFO PRINCIPAL*/
-
 .main-image {
     width: 100%;
     display: block;
     margin: 0;
+    height: 280px;
+    object-fit: cover;
 }
 
 .Profile img {
@@ -108,19 +108,21 @@ body {
 
 .main-content {
     background-color: #dec9e9;
-    position: absolute;
+    position: relative;
     width: 75%;
     max-width: 900px;
     height: auto;
     border-radius: 24px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: -80px;
+    margin-bottom: 40px;
     text-align: center;
     padding: 70px 40px 40px 40px;
     border: 4px solid #47126b;
     box-shadow: 0 15px 35px rgba(71, 18, 107, 0.15);
-    margin-top: 150px;
+    box-sizing: border-box;
+    z-index: 5;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-texts {
@@ -171,6 +173,7 @@ body {
     gap: 20px;
     align-items: center;
     margin-top: 15px;
+    padding-top: 15px;
 }
 
 .git-image,
@@ -192,27 +195,28 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 4px;
-
 }
 
 .contacts-1 p {
     margin: 0;
 }
 
-/*SECCION DE PROYECTOS*/
-
+/* SECCION DE PROYECTOS */
 .proyectos-section {
     width: 100%;
     height: auto;
-    padding: 70px 20px;
+    padding: 40px 20px;
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
+    margin-top: 0;
 }
 
 .proyectos-content {
     background: url('../assets/fondoestrellas.jpg') no-repeat center center / cover;
     border: 3.5px dashed #5b2a86;
     width: 95%;
+    max-width: 1200px;
     height: auto;
     border-radius: 20px;
     padding: 40px 20px;
@@ -221,6 +225,7 @@ body {
     align-items: center;
     flex-direction: column;
     box-shadow: 0 15px 35px rgba(123, 44, 191, 0.2);
+    box-sizing: border-box;
 }
 
 .proyectos-content h2 {
@@ -232,6 +237,7 @@ body {
     font-weight: 700;
     margin-bottom: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .proyectos-content h3 {
@@ -243,17 +249,20 @@ body {
     font-weight: 700;
     margin-bottom: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
-
 
 .card-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
 }
 
-/* --- CONTENEDOR PRINCIPAL DE LA CARD --- */
+/* CARD */
 .card {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 10px;
     background-color: #ffffff;
     border-radius: 20px;
     border: 3px solid #47126b;
@@ -262,6 +271,8 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
+    width: 300px;
+    max-width: 100%;
 }
 
 .card-img-top {
@@ -312,26 +323,27 @@ body {
     transform: translateY(-2px);
 }
 
-/*SECCION DE LAS TECNOLOGIAS*/
+/* TECNOLOGIAS */
 .tecnologias-section {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     width: 100%;
-    padding: 70px 0 70px 0px;
+    padding: 40px 20px;
+    box-sizing: border-box;
 }
-
 
 .SeccionGato {
     width: 20%;
     display: flex;
     justify-content: center;
-    padding-right: 50px;
+    padding-right: 30px;
 }
 
 .Gatito {
     width: 100%;
+    max-width: 180px;
     border-radius: 100%;
     box-shadow: 0 8px 18px rgba(71, 18, 107, 0.2);
     transition: transform 0.2s ease;
@@ -340,11 +352,13 @@ body {
 .tecnologias-content {
     justify-content: center;
     width: 60%;
+    max-width: 800px;
     border-radius: 24px;
     text-align: center;
-    padding: 50px 40px;
+    padding: 40px 30px;
     border: 3px solid #47126b;
     box-shadow: 0 15px 35px rgba(71, 18, 107, 0.15);
+    box-sizing: border-box;
 }
 
 .tecnologias-content h2 {
@@ -398,20 +412,20 @@ body {
     box-shadow: 0 8px 18px rgba(71, 18, 107, 0.2);
 }
 
-
-
-/* Sección contenedora para que actúe como un separador fino */
+/* CERTIFICACIONES */
 .certificaciones-bar-section {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 200px;
+    margin-top: 40px;
     padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .certificaciones-bar-container {
     background-color: #401b53;
     width: 97%;
+    max-width: 1200px;
     border-radius: 50px;
     border: 3px solid #47126b;
     padding: 15px 30px;
@@ -421,6 +435,7 @@ body {
     gap: 20px;
     box-shadow: 0 8px 20px rgba(71, 18, 107, 0.12);
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .cert-bar-title {
@@ -476,27 +491,12 @@ body {
     background-color: #7b2cbf;
 }
 
-@media (max-width: 768px) {
-    .certificaciones-bar-container {
-        flex-direction: column;
-        align-items: stretch;
-        border-radius: 20px;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .cert-items-wrapper {
-        justify-content: center;
-    }
-}
-
-
-/*SECCION DEL FOOTER*/
-
+/* FOOTER */
 .portfolio-footer {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 40px;
 }
 
 .footer-content {
@@ -508,6 +508,7 @@ body {
     align-items: center;
     gap: 20px;
     box-shadow: 0 10px 25px rgba(71, 18, 107, 0.12);
+    box-sizing: border-box;
 }
 
 .footer-text {
@@ -515,6 +516,7 @@ body {
     font-weight: 600;
     font-size: 0.95rem;
     margin: 0;
+    text-align: center;
 }
 
 .footer-links {
@@ -559,7 +561,134 @@ body {
     transform: translateY(-2px);
 }
 
-@media (max-width: 600px) {
+
+@media (max-width: 992px) {
+    .tecnologias-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .SeccionGato {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .Gatito {
+        max-width: 140px;
+    }
+
+    .tecnologias-content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navBar {
+        width: 100%;
+        border-radius: 0 0 25px 25px;
+        padding: 12px 10px;
+    }
+
+    .navBar ul {
+        gap: 18px;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .navBar ul li a {
+        font-size: 0.82rem;
+    }
+
+    .main-image {
+        height: 220px;
+    }
+
+    .main-content {
+        width: 92%;
+        padding: 65px 18px 30px 18px;
+        margin-top: -50px;
+    }
+
+    .Profile img {
+        width: 100px;
+        height: 100px;
+        top: -50px;
+    }
+
+    .main-texts h1 {
+        font-size: 1.6rem;
+    }
+
+    .main-sobreMi h2 {
+        font-size: 1.2rem;
+    }
+
+    .main-sobreMi p {
+        font-size: 0.95rem;
+    }
+
+    .contacts-1 {
+        width: 100%;
+    }
+
+    .proyectos-content {
+        padding: 25px 15px;
+    }
+
+    .proyectos-content h2,
+    .proyectos-content h3 {
+        font-size: 1.3rem;
+        padding: 10px 20px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .certificaciones-bar-container {
+        flex-direction: column;
+        align-items: stretch;
+        border-radius: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .cert-items-wrapper {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .navBar {
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+        padding: 10px 8px;
+    }
+
+    .navBar ul {
+        gap: 14px;
+    }
+
+    .navBar ul li a {
+        font-size: 0.76rem;
+    }
+
+    .main-image {
+        height: 190px;
+    }
+
+    .main-content {
+        margin-top: -35px;
+        width: 94%;
+        padding: 55px 12px 25px 12px;
+    }
+
+    .tecnologias-content {
+        width: 100%;
+        padding: 30px 15px;
+    }
+
     .footer-content {
         padding: 25px 20px;
         gap: 15px;
